@@ -17,11 +17,19 @@ let configuration = ImageManagerConfiguration(dataLoader: <#dataLoader#>, decode
 ImageManager.shared = ImageManager(configuration: configuration)
 ```
 
-#### Use Animated Image View
+#### Use Image View
 
 ```swift
-let imageView = AnimatedImageView()
+let imageView = AnimatedImageView() // Nuke.ImageView subclass
 imageView.setImageWithRequest(<#imageRequest#>)
+```
+
+#### Use Image Decoder
+
+```swift
+let animatedImage = AnimatedDecoder().imageWithData(<#data#>) // Nuke.AnimatedImage is created
+let imageView = AnimatedImageView() // Nuke.ImageView subclass
+imageView.displayImage(animatedImage) // Animated GIF playback is started
 ```
 
 ## Installation
