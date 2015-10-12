@@ -12,9 +12,10 @@
 #### Create Image Manager
 
 ```swift
+// Use AnimatedImageDecoder and AnimatedImageLoaderDelegate
 let decoder = ImageDecoderComposition(decoders: [AnimatedImageDecoder(), ImageDecoder()])
-let configuration = ImageManagerConfiguration(dataLoader: <#dataLoader#>, decoder:decoder)
-ImageManager.shared = ImageManager(configuration: configuration)
+let loader = ImageLoader(configuration: ImageLoaderConfiguration(dataLoader: <#dataLoader#>, decoder: decoder), delegate: AnimatedImageLoaderDelegate())
+ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader))
 ```
 
 #### Use Image View
