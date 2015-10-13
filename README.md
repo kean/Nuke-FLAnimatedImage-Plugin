@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/1567433/6684993/5971ef08-cc3a-11e4-984c-6769e4931497.png" height="100"/>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/1567433/10440878/a7c6e468-714b-11e5-9b12-baef482c37c1.png" height="100"/>
 
 <p align="center">
 <a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Nuke-Alamofire-Plugin.svg"></a>
@@ -11,25 +11,27 @@
 
 #### Create Image Manager
 
+- `AnimatedImageDecoder` creates `AnimatedImages` from received data
+- `AnimatedImageLoaderDelegate` prevents `ImageLoader` from processing `AnimatedImages`
+
 ```swift
-// Use AnimatedImageDecoder and AnimatedImageLoaderDelegate
 let decoder = ImageDecoderComposition(decoders: [AnimatedImageDecoder(), ImageDecoder()])
 let loader = ImageLoader(configuration: ImageLoaderConfiguration(dataLoader: <#dataLoader#>, decoder: decoder), delegate: AnimatedImageLoaderDelegate())
+
 ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader))
 ```
 
 #### Use Image View
 
+`AnimatedImageView` is a `Nuke.ImageView` subclass that allows image view to display animated images
 ```swift
-let imageView = AnimatedImageView() // Nuke.ImageView subclass
-imageView.setImageWithRequest(<#imageRequest#>)
+let imageView = AnimatedImageView()
+imageView.setImageWithRequest(<#imageRequest#>) // Load and start playing animated image
 ```
 
-#### Use Image Decoder
-
 ```swift
-let animatedImage = AnimatedDecoder().imageWithData(<#data#>) // Nuke.AnimatedImage is created
-let imageView = AnimatedImageView() // Nuke.ImageView subclass
+let imageView = AnimatedImageView()
+let animatedImage: AnimatedImage =  <#animatedImage#>
 imageView.displayImage(animatedImage) // Animated GIF playback is started
 ```
 
