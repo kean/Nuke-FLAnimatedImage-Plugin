@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.homepage         = "https://github.com/kean/Nuke-AnimatedImage-Plugin"
     s.license          = "MIT"
     s.author           = "Alexander Grebenyuk"
-    s.source           = { :git => "https://github.com/kean/Nuke-AnimatedImage-Plugin", :tag => s.version.to_s }
+    s.source           = { :git => "https://github.com/kean/Nuke-AnimatedImage-Plugin.git", :tag => s.version.to_s }
     s.social_media_url = "https://twitter.com/a_grebenyuk"
 
     s.module_name      = "NukeAnimatedImagePlugin"
