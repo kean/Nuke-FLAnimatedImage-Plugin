@@ -2,7 +2,6 @@
 
 <p align="center">
 <a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Nuke-Alamofire-Plugin.svg"></a>
-<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 </p>
 
 [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage) plugin for [Nuke](https://github.com/kean/Nuke) that allows you to load and display animated GIFs.
@@ -21,18 +20,12 @@ let loader = ImageLoader(configuration: ImageLoaderConfiguration(dataLoader: <#d
 ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader))
 ```
 
-#### Use Image View
+#### Use FLAnimatedImageView Extension
 
-`AnimatedImageView` is a `Nuke.ImageView` subclass that allows image view to display animated images
+Nuke adds full-featured image loading extension to FLAnimatedImageView
 ```swift
-let imageView = AnimatedImageView()
-imageView.setImageWithRequest(<#imageRequest#>) // Load and start playing animated image
-```
-
-```swift
-let imageView = AnimatedImageView()
-let animatedImage: AnimatedImage =  <#animatedImage#>
-imageView.displayImage(animatedImage) // Animated GIF playback is started
+let imageView = FLAnimatedImageView()
+imageView.nk_setImageWithRequest(<#imageRequest#>) // Loads animated image and starts playback
 ```
 
 ## Installation
