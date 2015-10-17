@@ -46,3 +46,25 @@ public class AnimatedImageDecoder: ImageDecoding {
         return sig[0] == 0x47 && sig[1] == 0x49 && sig[2] == 0x46
     }
 }
+
+/** Extension that adds image loading capabilities to FLAnimatedImageView
+*/
+extension FLAnimatedImageView {
+    public override var nk_displayedImage: UIImage? {
+        get {
+            return self.image
+        }
+        set {
+            guard newValue != nil else {
+                self.animatedImage = nil
+                self.image = nil
+                return
+            }
+            if let image = newValue as? AnimatedImage {
+                self.animatedImage = image.animatedImage
+            } else {
+                self.image = newValue
+            }
+        }
+    }
+}
