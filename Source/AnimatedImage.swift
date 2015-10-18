@@ -50,7 +50,7 @@ public class AnimatedImageDecoder: ImageDecoding {
 /** Extension that adds image loading capabilities to FLAnimatedImageView
 */
 extension FLAnimatedImageView {
-    public override var nk_displayedImage: UIImage? {
+    public override var nk_image: UIImage? {
         get {
             return self.image
         }
