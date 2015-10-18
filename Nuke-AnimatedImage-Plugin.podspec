@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "Nuke-AnimatedImage-Plugin"
-    s.version          = "0.1.0"
+    s.version          = "0.2.0"
     s.summary          = "Animated image plugin for Nuke - image managing framework"
 
     s.homepage         = "https://github.com/kean/Nuke-AnimatedImage-Plugin"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "8.0"
 
-    s.dependency "Nuke"
+    s.dependency "Nuke", "~> 1.0"
     s.dependency "FLAnimatedImage", "~> 1.0"
 
     s.source_files  = "Source/**/*"
