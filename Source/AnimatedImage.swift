@@ -18,6 +18,10 @@ public class AnimatedImage: UIImage {
         self.animatedImage = nil
         super.init(coder: aDecoder) // makes me sad every time
     }
+    
+    public required convenience init(imageLiteral name: String) {
+        fatalError("init(imageLiteral:) has not been implemented")
+    }
 }
 
 public class AnimatedImageDecoder: ImageDecoding {
