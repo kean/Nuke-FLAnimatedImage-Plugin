@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C06D2321C11F47D00CC5C35 /* AnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D2301C11F47D00CC5C35 /* AnimatedImage.swift */; };
+		0C06D2331C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D2311C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift */; };
+		0C06D2391C11F62300CC5C35 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C06D2371C11F62300CC5C35 /* FLAnimatedImage.framework */; };
+		0C06D23A1C11F62300CC5C35 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C06D2381C11F62300CC5C35 /* Nuke.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C06D2241C11F3FF00CC5C35 /* NukeAnimatedImagePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeAnimatedImagePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C06D2301C11F47D00CC5C35 /* AnimatedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
+		0C06D2311C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageLoaderDelegate.swift; sourceTree = "<group>"; };
+		0C06D2351C11F4A900CC5C35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C06D2371C11F62300CC5C35 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
+		0C06D2381C11F62300CC5C35 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C06D2201C11F3FF00CC5C35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C06D2391C11F62300CC5C35 /* FLAnimatedImage.framework in Frameworks */,
+				0C06D23A1C11F62300CC5C35 /* Nuke.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C06D21A1C11F3FF00CC5C35 = {
+			isa = PBXGroup;
+			children = (
+				0C06D22F1C11F47D00CC5C35 /* Source */,
+				0C06D23B1C11F62700CC5C35 /* Frameworks */,
+				0C06D2251C11F3FF00CC5C35 /* Products */,
+				0C06D2341C11F4A900CC5C35 /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+		0C06D2251C11F3FF00CC5C35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C06D2241C11F3FF00CC5C35 /* NukeAnimatedImagePlugin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C06D22F1C11F47D00CC5C35 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C06D2301C11F47D00CC5C35 /* AnimatedImage.swift */,
+				0C06D2311C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0C06D2341C11F4A900CC5C35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C06D2351C11F4A900CC5C35 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C06D23B1C11F62700CC5C35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C06D2371C11F62300CC5C35 /* FLAnimatedImage.framework */,
+				0C06D2381C11F62300CC5C35 /* Nuke.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C06D2211C11F3FF00CC5C35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C06D2231C11F3FF00CC5C35 /* Nuke iOS Animated Image Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C06D22C1C11F3FF00CC5C35 /* Build configuration list for PBXNativeTarget "Nuke iOS Animated Image Plugin" */;
+			buildPhases = (
+				0C06D21F1C11F3FF00CC5C35 /* Sources */,
+				0C06D2201C11F3FF00CC5C35 /* Frameworks */,
+				0C06D2211C11F3FF00CC5C35 /* Headers */,
+				0C06D2221C11F3FF00CC5C35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nuke iOS Animated Image Plugin";
+			productName = "Nuke-AnimatedImage-Plugin";
+			productReference = 0C06D2241C11F3FF00CC5C35 /* NukeAnimatedImagePlugin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C06D21B1C11F3FF00CC5C35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Alexander Grebenyuk";
+				TargetAttributes = {
+					0C06D2231C11F3FF00CC5C35 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 0C06D21E1C11F3FF00CC5C35 /* Build configuration list for PBXProject "Nuke-AnimatedImage-Plugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0C06D21A1C11F3FF00CC5C35;
+			productRefGroup = 0C06D2251C11F3FF00CC5C35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C06D2231C11F3FF00CC5C35 /* Nuke iOS Animated Image Plugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C06D2221C11F3FF00CC5C35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C06D21F1C11F3FF00CC5C35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C06D2331C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift in Sources */,
+				0C06D2321C11F47D00CC5C35 /* AnimatedImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C06D22A1C11F3FF00CC5C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C06D22B1C11F3FF00CC5C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C06D22D1C11F3FF00CC5C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-AnimatedImage-Plugin";
+				PRODUCT_NAME = NukeAnimatedImagePlugin;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0C06D22E1C11F3FF00CC5C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-AnimatedImage-Plugin";
+				PRODUCT_NAME = NukeAnimatedImagePlugin;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C06D21E1C11F3FF00CC5C35 /* Build configuration list for PBXProject "Nuke-AnimatedImage-Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C06D22A1C11F3FF00CC5C35 /* Debug */,
+				0C06D22B1C11F3FF00CC5C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C06D22C1C11F3FF00CC5C35 /* Build configuration list for PBXNativeTarget "Nuke iOS Animated Image Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C06D22D1C11F3FF00CC5C35 /* Debug */,
+				0C06D22E1C11F3FF00CC5C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C06D21B1C11F3FF00CC5C35 /* Project object */;
+}
