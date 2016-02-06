@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2016 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
 import FLAnimatedImage
@@ -27,7 +27,7 @@ public class AnimatedImage: UIImage {
 public class AnimatedImageDecoder: ImageDecoding {
     public init() {}
     
-    public func imageWithData(data: NSData) -> UIImage? {
+    public func decode(data: NSData, response: NSURLResponse?) -> Image? {
         guard self.isAnimatedGIFData(data) else {
             return nil
         }
@@ -52,9 +52,9 @@ public class AnimatedImageDecoder: ImageDecoding {
 }
 
 /** Extension that adds image loading capabilities to FLAnimatedImageView
-*/
+ */
 extension FLAnimatedImageView {
-    public override var nk_image: UIImage? {
+    public override var image: UIImage? {
         get {
             return self.image
         }
