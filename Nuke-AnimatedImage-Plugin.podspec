@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "8.0"
 
-    s.dependency "Nuke", "~> 1.0"
+    s.dependency "Nuke", "~> 2.0"
     s.dependency "FLAnimatedImage", "~> 1.0"
 
     s.source_files  = "Source/**/*"
