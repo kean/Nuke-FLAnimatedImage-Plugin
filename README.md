@@ -26,7 +26,7 @@ ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(load
 Nuke adds full-featured image loading extension to FLAnimatedImageView
 ```swift
 let imageView = FLAnimatedImageView()
-imageView.nk_setImageWithRequest(<#imageRequest#>) // Loads animated image and starts playback
+imageView.nk_setImageWith(<#imageRequest#>) // Loads animated image and starts playback
 ```
 
 ## Installation
