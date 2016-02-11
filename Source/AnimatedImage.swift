@@ -5,18 +5,19 @@
 import UIKit
 import FLAnimatedImage
 import Nuke
+import ImageIO
 
 public class AnimatedImage: UIImage {
-    public let animatedImage: FLAnimatedImage?
+    public let data: NSData! // it's nonnull
     
-    public init(animatedImage: FLAnimatedImage, posterImage: CGImageRef, posterImageScale: CGFloat, posterImageOrientation: UIImageOrientation) {
-        self.animatedImage = animatedImage
-        super.init(CGImage: posterImage, scale: posterImageScale, orientation: posterImageOrientation)
+    public init(data: NSData, poster: CGImageRef) {
+        self.data = data
+        super.init(CGImage: poster, scale: 1, orientation: .Up)
     }
     
-    public required init?(coder aDecoder: NSCoder) {
-        self.animatedImage = nil
-        super.init(coder: aDecoder) // makes me sad every time
+    public required init?(coder decoder: NSCoder) {
+        self.data = nil // makes me sad
+        super.init(coder: decoder)
     }
     
     public required convenience init(imageLiteral name: String) {
@@ -31,13 +32,10 @@ public class AnimatedImageDecoder: ImageDecoding {
         guard self.isAnimatedGIFData(data) else {
             return nil
         }
-        guard let image = FLAnimatedImage(animatedGIFData: data) where image.posterImage != nil else  {
+        guard let poster = self.posterImageFor(data) else {
             return nil
         }
-        guard let poster = image.posterImage, posterCGImage = poster.CGImage else {
-            return nil
-        }
-        return AnimatedImage(animatedImage: image, posterImage: posterCGImage, posterImageScale: poster.scale, posterImageOrientation: poster.imageOrientation)
+        return AnimatedImage(data: data, poster: poster)
     }
     
     public func isAnimatedGIFData(data: NSData) -> Bool {
@@ -49,6 +47,14 @@ public class AnimatedImageDecoder: ImageDecoding {
         data.getBytes(&sig, length:sigLength)
         return sig[0] == 0x47 && sig[1] == 0x49 && sig[2] == 0x46
     }
+    
+    private func posterImageFor(data: NSData) -> CGImageRef? {
+        if let source = CGImageSourceCreateWithData(data, nil) {
+            return CGImageSourceCreateImageAtIndex(source, 0, nil)
+        }
+        return nil
+    }
+    
 }
 
 /** Extension that adds image loading capabilities to FLAnimatedImageView
@@ -65,7 +71,7 @@ extension FLAnimatedImageView {
                 return
             }
             if let image = newValue as? AnimatedImage {
-                self.animatedImage = image.animatedImage
+                self.animatedImage = FLAnimatedImage(animatedGIFData: image.data)
             } else {
                 self.image = newValue
             }
