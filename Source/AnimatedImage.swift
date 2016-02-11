@@ -57,9 +57,9 @@ public class AnimatedImageDecoder: ImageDecoding {
     
 }
 
-/** Extension that adds image loading capabilities to FLAnimatedImageView
+/** Extension that adds image loading capabilities to the FLAnimatedImageView.
  */
-extension FLAnimatedImageView {
+public extension FLAnimatedImageView {
     public override var nk_image: UIImage? {
         get {
             return self.image
@@ -76,5 +76,11 @@ extension FLAnimatedImageView {
                 self.image = newValue
             }
         }
+    }
+}
+
+public class AnimatedImageLoaderDelegate: ImageLoaderDefaultDelegate {
+    public override func loader(loader: ImageLoader, processorFor request: ImageRequest, image: Image) -> ImageProcessing? {
+        return image is AnimatedImage ? nil : super.loader(loader, processorFor: request, image: image)
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C06D2321C11F47D00CC5C35 /* AnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D2301C11F47D00CC5C35 /* AnimatedImage.swift */; };
-		0C06D2331C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D2311C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift */; };
 		0C06D2391C11F62300CC5C35 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C06D2371C11F62300CC5C35 /* FLAnimatedImage.framework */; };
 		0C06D23A1C11F62300CC5C35 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C06D2381C11F62300CC5C35 /* Nuke.framework */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		0C06D2241C11F3FF00CC5C35 /* NukeAnimatedImagePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeAnimatedImagePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C06D2301C11F47D00CC5C35 /* AnimatedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
-		0C06D2311C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageLoaderDelegate.swift; sourceTree = "<group>"; };
 		0C06D2351C11F4A900CC5C35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C06D2371C11F62300CC5C35 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
 		0C06D2381C11F62300CC5C35 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				0C06D2301C11F47D00CC5C35 /* AnimatedImage.swift */,
-				0C06D2311C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -156,7 +153,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C06D2331C11F47D00CC5C35 /* AnimatedImageLoaderDelegate.swift in Sources */,
 				0C06D2321C11F47D00CC5C35 /* AnimatedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
