@@ -25,6 +25,8 @@ public class AnimatedImage: UIImage {
     }
 }
 
+/** Creates instances of `AnimatedImage` class from the given data. Checks if the image data is in a GIF image format, otherwise returns nil.
+ */
 public class AnimatedImageDecoder: ImageDecoding {
     public init() {}
     
@@ -79,6 +81,8 @@ public extension FLAnimatedImageView {
     }
 }
 
+/** Prevents `ImageLoader` from processing animated images.
+ */
 public class AnimatedImageLoaderDelegate: ImageLoaderDefaultDelegate {
     public override func loader(loader: ImageLoader, processorFor request: ImageRequest, image: Image) -> ImageProcessing? {
         return image is AnimatedImage ? nil : super.loader(loader, processorFor: request, image: image)
