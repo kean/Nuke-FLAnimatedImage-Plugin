@@ -99,3 +99,26 @@ public class AnimatedImageLoaderDelegate: ImageLoaderDefaultDelegate {
         return image is AnimatedImage ? nil : super.loader(loader, processorFor: request, image: image)
     }
 }
+
+/** Memory cache that is aware of animated images. Can be used for both single-frame and animated images.
+ */
+public class AnimatedImageMemoryCache: ImageMemoryCache {
+
+    /** Can be used to disable storing animated images. Default value is true (storage is allowed).
+     */
+    public var allowsAnimatedImagesStorage = true
+
+    public override func setResponse(response: ImageCachedResponse, forKey key: ImageRequestKey) {
+        if !self.allowsAnimatedImagesStorage && response.image is AnimatedImage {
+            return
+        }
+        super.setResponse(response, forKey: key)
+    }
+
+    public override func costFor(image: Image) -> Int {
+        if let animatedImage = image as? AnimatedImage {
+            return animatedImage.data.length + super.costFor(image)
+        }
+        return super.costFor(image)
+    }
+}
