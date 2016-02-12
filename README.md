@@ -13,12 +13,14 @@
 
 - `AnimatedImageDecoder` creates `AnimatedImages` from received data
 - `AnimatedImageLoaderDelegate` prevents `ImageLoader` from processing `AnimatedImages`
+- `AnimatedImageMemoryCache` calculates proper cost for animated images, can also be used to disable animated images storage all together
 
 ```swift
 let decoder = ImageDecoderComposition(decoders: [AnimatedImageDecoder(), ImageDecoder()])
 let loader = ImageLoader(configuration: ImageLoaderConfiguration(dataLoader: <#dataLoader#>, decoder: decoder), delegate: AnimatedImageLoaderDelegate())
+let cache = AnimatedImageMemoryCache()
 
-ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader))
+ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader, cahce: cache))
 ```
 
 #### Use FLAnimatedImageView Extension
