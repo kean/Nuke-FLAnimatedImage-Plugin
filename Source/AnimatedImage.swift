@@ -73,7 +73,18 @@ public extension FLAnimatedImageView {
                 return
             }
             if let image = newValue as? AnimatedImage {
-                self.animatedImage = FLAnimatedImage(animatedGIFData: image.data)
+                // Display poster image immediately
+                self.image = image
+
+                // Start playback after we prefare FLAnimatedImage for rendering
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+                    let animatedImage = FLAnimatedImage(animatedGIFData: image.data)
+                    dispatch_async(dispatch_get_main_queue()) {
+                        if self.image === image { // Still displaying the same poster image
+                            self.animatedImage = animatedImage
+                        }
+                    }
+                }
             } else {
                 self.image = newValue
             }
