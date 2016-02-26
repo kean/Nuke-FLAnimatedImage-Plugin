@@ -20,7 +20,7 @@ let decoder = ImageDecoderComposition(decoders: [AnimatedImageDecoder(), ImageDe
 let loader = ImageLoader(configuration: ImageLoaderConfiguration(dataLoader: <#dataLoader#>, decoder: decoder), delegate: AnimatedImageLoaderDelegate())
 let cache = AnimatedImageMemoryCache()
 
-ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader, cahce: cache))
+ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader, cache: cache))
 ```
 
 #### Use FLAnimatedImageView Extension
