@@ -62,32 +62,28 @@ public class AnimatedImageDecoder: ImageDecoding {
 /** Extension that adds image loading capabilities to the FLAnimatedImageView.
  */
 public extension FLAnimatedImageView {
-    public override var nk_image: UIImage? {
-        get {
-            return self.image
+    /// Displays a given image. Starts animation if image is an instance of AnimatedImage.
+    public func nk_displayImage(image: Image?) {
+        guard image != nil else {
+            self.animatedImage = nil
+            self.image = nil
+            return
         }
-        set {
-            guard newValue != nil else {
-                self.animatedImage = nil
-                self.image = nil
-                return
-            }
-            if let image = newValue as? AnimatedImage {
-                // Display poster image immediately
-                self.image = image
+        if let image = image as? AnimatedImage {
+            // Display poster image immediately
+            self.image = image
 
-                // Start playback after we prefare FLAnimatedImage for rendering
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-                    let animatedImage = FLAnimatedImage(animatedGIFData: image.data)
-                    dispatch_async(dispatch_get_main_queue()) {
-                        if self.image === image { // Still displaying the same poster image
-                            self.animatedImage = animatedImage
-                        }
+            // Start playback after we prefare FLAnimatedImage for rendering
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+                let animatedImage = FLAnimatedImage(animatedGIFData: image.data)
+                dispatch_async(dispatch_get_main_queue()) {
+                    if self.image === image { // Still displaying the same poster image
+                        self.animatedImage = animatedImage
                     }
                 }
-            } else {
-                self.image = newValue
             }
+        } else {
+            self.image = image
         }
     }
 }
