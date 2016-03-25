@@ -63,7 +63,7 @@ public class AnimatedImageDecoder: ImageDecoding {
  */
 public extension FLAnimatedImageView {
     /// Displays a given image. Starts animation if image is an instance of AnimatedImage.
-    public func nk_displayImage(image: Image?) {
+    public override func nk_displayImage(image: Image?) {
         guard image != nil else {
             self.animatedImage = nil
             self.image = nil
