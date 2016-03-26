@@ -37,7 +37,7 @@ See [Nuke](https://github.com/kean/Nuke) for installation instructions.
 
 ## Requirements
 - iOS 8.0+
-- Xcode 7.0+, Swift 2.0+
+- Xcode 7.3+, Swift 2.2+
 
 ## Contacts
 
