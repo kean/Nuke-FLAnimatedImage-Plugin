@@ -1,5 +1,9 @@
  [Changelog](https://github.com/kean/Nuke-AnimatedImage-Plugin/releases) for all versions
 
+## Nuke AnimatedImage Plugin 1.0.0
+
+- Update to use Nuke 3.0+
+
 ## Nuke AnimatedImage Plugin 0.6.0
 
 - #5 Instances of Nuke.AnimatedImage class no longer store references to instances of FLAnimatedImage class. It has multiple benefits: 
