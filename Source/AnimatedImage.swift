@@ -77,7 +77,7 @@ public extension FLAnimatedImageView {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
                 let animatedImage = FLAnimatedImage(animatedGIFData: image.data)
                 dispatch_async(dispatch_get_main_queue()) {
-                    if self.image === image { // Still displaying the same poster image
+                    if (self.image as? AnimatedImage)?.data == image.data { // Still displaying the same poster image
                         self.animatedImage = animatedImage
                     }
                 }
