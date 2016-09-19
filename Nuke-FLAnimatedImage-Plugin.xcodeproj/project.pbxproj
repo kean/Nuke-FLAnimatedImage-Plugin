@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C06D2241C11F3FF00CC5C35 /* NukeAnimatedImagePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeAnimatedImagePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C06D2241C11F3FF00CC5C35 /* NukeFLAnimatedImagePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeFLAnimatedImagePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C06D2301C11F47D00CC5C35 /* AnimatedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
 		0C06D2351C11F4A900CC5C35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C06D2371C11F62300CC5C35 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		0C06D2251C11F3FF00CC5C35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C06D2241C11F3FF00CC5C35 /* NukeAnimatedImagePlugin.framework */,
+				0C06D2241C11F3FF00CC5C35 /* NukeFLAnimatedImagePlugin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,9 +89,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C06D2231C11F3FF00CC5C35 /* Nuke iOS Animated Image Plugin */ = {
+		0C06D2231C11F3FF00CC5C35 /* Nuke iOS FLAnimatedImage Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C06D22C1C11F3FF00CC5C35 /* Build configuration list for PBXNativeTarget "Nuke iOS Animated Image Plugin" */;
+			buildConfigurationList = 0C06D22C1C11F3FF00CC5C35 /* Build configuration list for PBXNativeTarget "Nuke iOS FLAnimatedImage Plugin" */;
 			buildPhases = (
 				0C06D21F1C11F3FF00CC5C35 /* Sources */,
 				0C06D2201C11F3FF00CC5C35 /* Frameworks */,
@@ -102,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = "Nuke iOS Animated Image Plugin";
+			name = "Nuke iOS FLAnimatedImage Plugin";
 			productName = "Nuke-AnimatedImage-Plugin";
-			productReference = 0C06D2241C11F3FF00CC5C35 /* NukeAnimatedImagePlugin.framework */;
+			productReference = 0C06D2241C11F3FF00CC5C35 /* NukeFLAnimatedImagePlugin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0C06D21E1C11F3FF00CC5C35 /* Build configuration list for PBXProject "Nuke-AnimatedImage-Plugin" */;
+			buildConfigurationList = 0C06D21E1C11F3FF00CC5C35 /* Build configuration list for PBXProject "Nuke-FLAnimatedImage-Plugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C06D2231C11F3FF00CC5C35 /* Nuke iOS Animated Image Plugin */,
+				0C06D2231C11F3FF00CC5C35 /* Nuke iOS FLAnimatedImage Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -266,8 +266,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-AnimatedImage-Plugin";
-				PRODUCT_NAME = NukeAnimatedImagePlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-FLAnimatedImage-Plugin";
+				PRODUCT_NAME = NukeFLAnimatedImagePlugin;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -289,8 +289,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-AnimatedImage-Plugin";
-				PRODUCT_NAME = NukeAnimatedImagePlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-FLAnimatedImage-Plugin";
+				PRODUCT_NAME = NukeFLAnimatedImagePlugin;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
@@ -300,7 +300,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C06D21E1C11F3FF00CC5C35 /* Build configuration list for PBXProject "Nuke-AnimatedImage-Plugin" */ = {
+		0C06D21E1C11F3FF00CC5C35 /* Build configuration list for PBXProject "Nuke-FLAnimatedImage-Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C06D22A1C11F3FF00CC5C35 /* Debug */,
@@ -309,7 +309,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C06D22C1C11F3FF00CC5C35 /* Build configuration list for PBXNativeTarget "Nuke iOS Animated Image Plugin" */ = {
+		0C06D22C1C11F3FF00CC5C35 /* Build configuration list for PBXNativeTarget "Nuke iOS FLAnimatedImage Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C06D22D1C11F3FF00CC5C35 /* Debug */,
