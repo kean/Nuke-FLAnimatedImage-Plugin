@@ -5,51 +5,49 @@
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 </p>
 
-[FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage) plugin for [Nuke](https://github.com/kean/Nuke) that allows you to load and display animated GIFs.
+[FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage) plugin for [Nuke](https://github.com/kean/Nuke) that allows you to load and display animated GIFs with [smooth scrolling performance and low memory footprint](https://www.youtube.com/watch?v=fEJqQMJrET4).
+
 
 ## Usage
 
-#### Create Image Manager
-
-- `AnimatedImageDecoder` creates `AnimatedImages` from received data
-- `AnimatedImageLoaderDelegate` prevents `ImageLoader` from processing `AnimatedImages`
-- `AnimatedImageMemoryCache` calculates proper cost for animated images, can also be used to disable animated images storage all together
+The plugin features a pre-configured `Nuke.Manager` with GIF support, and an `AnimatedImageView`:
 
 ```swift
-let decoder = ImageDecoderComposition(decoders: [AnimatedImageDecoder(), ImageDecoder()])
-let loader = ImageLoader(configuration: ImageLoaderConfiguration(dataLoader: <#dataLoader#>, decoder: decoder), delegate: AnimatedImageLoaderDelegate())
-let cache = AnimatedImageMemoryCache()
-
-ImageManager.shared = ImageManager(configuration: ImageManagerConfiguration(loader: loader, cache: cache))
-```
-
-#### Use FLAnimatedImageView Extension
-
-Nuke adds full-featured image loading extension to FLAnimatedImageView
-```swift
-let imageView = FLAnimatedImageView()
-imageView.nk_setImageWith(<#imageRequest#>) // Loads animated image and starts playback
+let view = AnimatedImageView()
+AnimatedImage.manager.loadImage(with: URL(string: "http://...")!, into: view)
 ```
 
 ## Installation
 
-See [Nuke](https://github.com/kean/Nuke) for installation instructions.
+### [CocoaPods](http://cocoapods.org)
+
+To install the plugin add a dependency to your Podfile:
+
+```ruby
+# source 'https://github.com/CocoaPods/Specs.git'
+# use_frameworks!
+
+pod "Nuke-AnimatedImage-Plugin"
+```
+
+### [Carthage](https://github.com/Carthage/Carthage)
+
+To install the plugin add a dependency to your Cartfile:
+
+```
+github "kean/Nuke-AnimatedImage-Plugin"
+```
 
 ## Requirements
-- iOS 8.0+
-- Xcode 7.3+, Swift 2.2+
 
-## Contacts
+- iOS 9
+- Xcode 8
+- Swift 3
 
-<a href="https://github.com/kean">
-<img src="https://cloud.githubusercontent.com/assets/1567433/6521218/9c7e2502-c378-11e4-9431-c7255cf39577.png" height="44" hspace="2"/>
-</a>
-<a href="https://twitter.com/a_grebenyuk">
-<img src="https://cloud.githubusercontent.com/assets/1567433/6521243/fb085da4-c378-11e4-973e-1eeeac4b5ba5.png" height="44" hspace="2"/>
-</a>
-<a href="https://www.linkedin.com/pub/alexander-grebenyuk/83/b43/3a0">
-<img src="https://cloud.githubusercontent.com/assets/1567433/6521256/20247bc2-c379-11e4-8e9e-417123debb8c.png" height="44" hspace="2"/>
-</a>
+## Dependencies
+
+- [Nuke 4.x](https://github.com/kean/Nuke)
+- [FLAnimatedImage 1.x](https://github.com/Flipboard/FLAnimatedImage)
 
 ## License
 

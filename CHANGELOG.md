@@ -1,10 +1,20 @@
  [Changelog](https://github.com/kean/Nuke-AnimatedImage-Plugin/releases) for all versions
 
-## Nuke AnimatedImage Plugin 1.0.0
+## Nuke AnimatedImage Plugin 2.0
+
+Plugin has been updated to support Swift 3 and Nuke 4.
+
+- Add `AnimatedImage.manager` that constructs default `Nuke.Manager` with support for animated images
+- Add `AnimatedImageView` that implements `Nuke.Target` protocol
+- `AnimatedImage` `data` is now nonnull (was explicitly unwrapped optional)
+- `AnimatedImage` now implements `NSCoding` properly
+- Remove `AnimatedImageProcessor`, uses new `makeProcessor` closure from `Nuke.Loader` class instead
+
+## Nuke AnimatedImage Plugin 1.0
 
 - Update to use Nuke 3.0+
 
-## Nuke AnimatedImage Plugin 0.6.0
+## Nuke AnimatedImage Plugin 0.6
 
 - #5 Instances of Nuke.AnimatedImage class no longer store references to instances of FLAnimatedImage class. It has multiple benefits: 
   - huge reduction in memory usage (in fact it's ~70% reduction in persistent memory usage, see the issue for more info
