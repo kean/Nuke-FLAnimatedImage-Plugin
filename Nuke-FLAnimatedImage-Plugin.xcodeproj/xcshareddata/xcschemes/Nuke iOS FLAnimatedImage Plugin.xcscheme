@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C06D2231C11F3FF00CC5C35"
-               BuildableName = "NukeAnimatedImagePlugin.framework"
+               BuildableName = "NukeFLAnimatedImagePlugin.framework"
                BlueprintName = "Nuke iOS FLAnimatedImage Plugin"
                ReferencedContainer = "container:Nuke-FLAnimatedImage-Plugin.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C06D2231C11F3FF00CC5C35"
-            BuildableName = "NukeAnimatedImagePlugin.framework"
+            BuildableName = "NukeFLAnimatedImagePlugin.framework"
             BlueprintName = "Nuke iOS FLAnimatedImage Plugin"
             ReferencedContainer = "container:Nuke-FLAnimatedImage-Plugin.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C06D2231C11F3FF00CC5C35"
-            BuildableName = "NukeAnimatedImagePlugin.framework"
+            BuildableName = "NukeFLAnimatedImagePlugin.framework"
             BlueprintName = "Nuke iOS FLAnimatedImage Plugin"
             ReferencedContainer = "container:Nuke-FLAnimatedImage-Plugin.xcodeproj">
          </BuildableReference>

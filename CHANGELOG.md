@@ -1,8 +1,8 @@
- [Changelog](https://github.com/kean/Nuke-AnimatedImage-Plugin/releases) for all versions
+ [Changelog](https://github.com/kean/Nuke-FLAnimatedImage-Plugin/releases) for all versions
 
-## Nuke AnimatedImage Plugin 2.0
+## Nuke FLAnimatedImage Plugin 2.0
 
-Plugin has been updated to support Swift 3 and Nuke 4.
+Plugin has been updated to support Swift 3 and Nuke 4. It has also been renamed to "Nuke FLAnimatedImage Plugin" (which it should have been in the first place).
 
 - Add `AnimatedImage.manager` that constructs default `Nuke.Manager` with support for animated images
 - Add `AnimatedImageView` that implements `Nuke.Target` protocol
