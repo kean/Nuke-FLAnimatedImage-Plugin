@@ -27,7 +27,7 @@ To install the plugin add a dependency to your Podfile:
 # source 'https://github.com/CocoaPods/Specs.git'
 # use_frameworks!
 
-pod "Nuke-AnimatedImage-Plugin"
+pod "Nuke-FLAnimatedImage-Plugin"
 ```
 
 ### [Carthage](https://github.com/Carthage/Carthage)
@@ -35,7 +35,7 @@ pod "Nuke-AnimatedImage-Plugin"
 To install the plugin add a dependency to your Cartfile:
 
 ```
-github "kean/Nuke-AnimatedImage-Plugin"
+github "kean/Nuke-FLAnimatedImage-Plugin"
 ```
 
 ## Requirements
