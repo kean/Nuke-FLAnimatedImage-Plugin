@@ -96,23 +96,26 @@ public class AnimatedImageView: UIView, Nuke.Target {
     
     public init(imageView: FLAnimatedImageView = FLAnimatedImageView()) {
         self.imageView = imageView
-        
         super.init(frame: CGRect.zero)
-        
+        prepare()
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+        self.imageView = FLAnimatedImageView()
+        super.init(coder: aDecoder)
+        prepare()
+    }
+
+    /// Common init.
+    private func prepare() {
         addSubview(imageView)
-        
-        layoutMargins = UIEdgeInsets.zero
-        
+
         imageView.translatesAutoresizingMaskIntoConstraints = false
         for attr in [.top, .leading, .bottom, .trailing] as [NSLayoutAttribute] {
             addConstraint(NSLayoutConstraint(item: imageView, attribute: attr, relatedBy: .equal, toItem: self, attribute: attr, multiplier: 1, constant: 0))
         }
     }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("AnimatedImageView doesn't support NSCoding yet")
-    }
-    
+
     /// Displays an image on success. Runs `opacity` transition if
     /// the response was not from the memory cache.
     public func handle(response: Response, isFromMemoryCache: Bool) {

@@ -3,19 +3,19 @@ PODS:
   - Nuke (4.0)
   - Nuke-FLAnimatedImage-Plugin (2.0):
     - FLAnimatedImage (~> 1.0)
-    - Nuke
+    - Nuke (~> 4.0)
 
 DEPENDENCIES:
   - Nuke-FLAnimatedImage-Plugin (from `../`)
 
 EXTERNAL SOURCES:
   Nuke-FLAnimatedImage-Plugin:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Nuke: c738cc70c96febfbc974809c1eb8b3d600b09a6b
-  Nuke-FLAnimatedImage-Plugin: 0cc0d6f4b32161fb1ad8714b86335f4145c05f60
+  Nuke-FLAnimatedImage-Plugin: de4b8147ef8abaf8baf1928112ae631eaf05a8a2
 
 PODFILE CHECKSUM: ed431948c7ecaba8d524680d80bb754947864258
 

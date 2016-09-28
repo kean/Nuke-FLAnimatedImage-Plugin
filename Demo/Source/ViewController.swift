@@ -44,6 +44,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             URL(string: "\(root)/1567433/6505643/42eb3ee8-c2e8-11e4-8666-ac9c8e1dc9b5.gif")!
         ]
     }
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     // MARK: Collection View
     
