@@ -1,5 +1,9 @@
  [Changelog](https://github.com/kean/Nuke-FLAnimatedImage-Plugin/releases) for all versions
 
+## Nuke FLAnimatedImage Plugin 2.1
+
+- AnimatedImageView now supports Storyboards
+
 ## Nuke FLAnimatedImage Plugin 2.0
 
 Plugin has been updated to support Swift 3 and Nuke 4. It has also been renamed to "Nuke FLAnimatedImage Plugin" (which it should have been in the first place).
