@@ -71,7 +71,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
                 textView.frame = cell.contentView.bounds
                 textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
                 
-                textView.text = "Images by Florian de Looij\n http://flrn.nl/gifs/"
+                textView.text = "Images by Florian de Looij\n http://flrngif.tumblr.com"
             }
             return cell
         } else {
