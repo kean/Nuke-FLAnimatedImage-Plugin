@@ -41,13 +41,13 @@ github "kean/Nuke-FLAnimatedImage-Plugin"
 ## Requirements
 
 - iOS 9
-- Xcode 8
-- Swift 3
+- Xcode 9
+- Swift 4
 
 ## Dependencies
 
-- [Nuke 4.x](https://github.com/kean/Nuke)
-- [FLAnimatedImage 1.x](https://github.com/Flipboard/FLAnimatedImage)
+- [Nuke 6](https://github.com/kean/Nuke)
+- [FLAnimatedImage 1](https://github.com/Flipboard/FLAnimatedImage)
 
 ## License
 
