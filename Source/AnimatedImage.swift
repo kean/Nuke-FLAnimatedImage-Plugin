@@ -42,13 +42,14 @@ public extension AnimatedImage {
         
         // Updates `Cache` cost calculation block.
         let cache = Nuke.Cache().preparedForAnimatedImages()
-        
-        let loader = Nuke.Loader(loader: Nuke.DataLoader(), decoder: decoder, cache: cache)
-        
+
+        var options = Loader.Options()
         // Disable processing of animated images.
-        loader.makeProcessor = { image, request in
+        options.processor = { image, request in
             return image is AnimatedImage ? nil : request.processor
         }
+
+        let loader = Nuke.Loader(loader: Nuke.DataLoader(), decoder: decoder, options: options)
         return Manager(loader: loader, cache: cache)
     }()
 }
@@ -115,22 +116,20 @@ public class AnimatedImageView: UIView, Nuke.Target {
     
     /// Displays an image on success. Runs `opacity` transition if
     /// the response was not from the memory cache.
-    public func handle(response: Response, isFromMemoryCache: Bool) {
-        switch response {
-        case let .fulfilled(image):
-            imageView.nk_display(image)
-            if !isFromMemoryCache {
-                let animation = CABasicAnimation(keyPath: "opacity")
-                animation.duration = 0.25
-                animation.fromValue = 0
-                animation.toValue = 1
-                let layer: CALayer? = imageView.layer // Make compiler happy on OSX
-                layer?.add(animation, forKey: "imageTransition")
-            }
-        case .rejected(_): return
+    public func handle(response: Result<Image>, isFromMemoryCache: Bool) {
+        guard let image = response.value else { return }
+        imageView.nk_display(image)
+        if !isFromMemoryCache {
+            let animation = CABasicAnimation(keyPath: "opacity")
+            animation.duration = 0.25
+            animation.fromValue = 0
+            animation.toValue = 1
+            let layer: CALayer? = imageView.layer // Make compiler happy on OSX
+            layer?.add(animation, forKey: "imageTransition")
         }
     }
 }
+
 
 public extension FLAnimatedImageView {
     /// Displays a given image. Starts animation if image is an instance of AnimatedImage.
