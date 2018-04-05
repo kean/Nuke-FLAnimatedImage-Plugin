@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2016 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2016-2018 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
 import Nuke
@@ -78,7 +78,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imageCellReuseID, for: indexPath) as! AnimatedImageCell
             
             cell.activityIndicator.startAnimating()
-            AnimatedImage.manager.loadImage(with: Request(url: imageURLs[indexPath.row]), into: cell.imageView) { [weak cell] in
+            Nuke.Manager.animatedImageManager.loadImage(with: Request(url: imageURLs[indexPath.row]), into: cell.imageView) { [weak cell] in
                 cell?.activityIndicator.stopAnimating()
                 cell?.imageView.handle(response: $0, isFromMemoryCache: $1)
             }
