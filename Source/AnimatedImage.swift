@@ -3,53 +3,34 @@
 // Copyright (c) 2016 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import ImageIO
 import FLAnimatedImage
 import Nuke
 
-/// Represents animated image data alongside a poster image (first image frame).
-public class AnimatedImage: UIImage {
-    public let data: Data
-    
-    public init(data: Data, poster: CGImage) {
-        self.data = data
-        super.init(cgImage: poster, scale: 1, orientation: .up)
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        guard let data = aDecoder.decodeObject(forKey: "_nk_data") as? Data else {
-            return nil
-        }
-        self.data = data
-        super.init(coder: aDecoder)
-    }
-    
-    public override func encode(with aCoder: NSCoder) {
-        super.encode(with: aCoder)
-        aCoder.encode(data, forKey: "_nk_data")
-    }
-    
-    public required convenience init(imageLiteralResourceName name: String) {
-        fatalError("init(imageLiteral:) has not been implemented")
+private var _animatedImageDataAK = "Manager.Context.AssociatedKey"
+
+extension UIImage {
+    // Animated image data. Only not `nil` when image data actually contains
+    // an animated image.
+    public var animatedImageData: Data? {
+        get { return objc_getAssociatedObject(self, &_animatedImageDataAK) as? Data }
+        set { objc_setAssociatedObject(self, &_animatedImageDataAK, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
 }
 
-public extension AnimatedImage {
-    /// Default `Nuke.Manager` with animated GIF support.
-    public static let manager: Nuke.Manager = {
+extension Nuke.Manager {
+    /// `Nuke.Manager` with animated GIF support.
+    public static let animatedImageManager: Nuke.Manager = {
         // Make a decoder which supports animated GIFs.
         let decoder = Nuke.DataDecoderComposition(decoders: [AnimatedImageDecoder(), Nuke.DataDecoder()])
-        
-        // Updates `Cache` cost calculation block.
-        let cache = Nuke.Cache().preparedForAnimatedImages()
 
-        var options = Loader.Options()
-        // Disable processing of animated images.
-        options.processor = { image, request in
-            return image is AnimatedImage ? nil : request.processor
-        }
+        let cache = Nuke.Cache()
+        cache.prepareForAnimatedImages()
+
+        var options = Nuke.Loader.Options()
+        options.prepareForAnimatedImages()
 
         let loader = Nuke.Loader(loader: Nuke.DataLoader(), decoder: decoder, options: options)
+
         return Manager(loader: loader, cache: cache)
     }()
 }
@@ -60,13 +41,11 @@ public class AnimatedImageDecoder: Nuke.DataDecoding {
     public init() {}
     
     public func decode(data: Data, response: URLResponse) -> Nuke.Image? {
-        guard self.isAnimatedGIFData(data) else {
+        guard self.isAnimatedGIFData(data), let image = UIImage(data: data) else {
             return nil
         }
-        guard let poster = self.posterImage(for: data) else {
-            return nil
-        }
-        return AnimatedImage(data: data, poster: poster)
+        image.animatedImageData = data
+        return image
     }
     
     public func isAnimatedGIFData(_ data: Data) -> Bool {
@@ -139,14 +118,14 @@ public extension FLAnimatedImageView {
             self.image = nil
             return
         }
-        if let image = image as? AnimatedImage {
+        if let data = image?.animatedImageData {
             // Display poster image immediately
             self.image = image
             
             // Prepare FLAnimatedImage object asynchronously (it takes a
             // noticeable amount of time), and start playback.
             DispatchQueue.global().async {
-                let animatedImage = FLAnimatedImage(animatedGIFData: image.data)
+                let animatedImage = FLAnimatedImage(animatedGIFData: data)
                 DispatchQueue.main.async {
                     // If view is still displaying the same image
                     if self.image === image {
@@ -160,17 +139,25 @@ public extension FLAnimatedImageView {
     }
 }
 
+public extension Nuke.Loader.Options {
+    /// Disables processing of animated images by setting `processor` closure.
+    public mutating func prepareForAnimatedImages () {
+        // Disable processing of animated images.
+        processor = { image, request in
+            return (image.animatedImageData != nil) ? nil : request.processor
+        }
+    }
+}
+
 public extension Nuke.Cache {
     /// Updates `Cache` cost block by adding special handling of `AnimatedImage`.
-    public func preparedForAnimatedImages() -> Self {
+    public func prepareForAnimatedImages() {
         let cost = self.cost
         self.cost = {
-            var val = cost($0)
-            if let animatedImage = $0 as? AnimatedImage {
-                val += animatedImage.data.count
+            guard let data = $0.animatedImageData else {
+                return cost($0) // Simply return default cost.
             }
-            return val
+            return cost($0) + data.count // Return cost + animated image data size.
         }
-        return self
     }
 }
