@@ -12,8 +12,130 @@
 		0C232AC41D9196F5004CAFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C232AC21D9196F5004CAFC8 /* Main.storyboard */; };
 		0C232AC61D9196F5004CAFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C232AC51D9196F5004CAFC8 /* Assets.xcassets */; };
 		0C232AC91D9196F5004CAFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C232AC71D9196F5004CAFC8 /* LaunchScreen.storyboard */; };
-		F50A7C49F25F834028A6AE21 /* Pods_Nuke_FLAnimatedImage_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFD25F7E063686B549722E9 /* Pods_Nuke_FLAnimatedImage_Demo.framework */; };
+		0CF4B7E1209B336900F4A04B /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7C4209B333E00F4A04B /* Nuke.framework */; };
+		0CF4B7E2209B336900F4A04B /* Nuke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7C4209B333E00F4A04B /* Nuke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CF4B7E5209B336900F4A04B /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */; };
+		0CF4B7E6209B336900F4A04B /* FLAnimatedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CF4B7E9209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */; };
+		0CF4B7EA209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CF4B7B5209B333900F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92C9BC0C1B199DC500D79B06;
+			remoteInfo = FLAnimatedImage;
+		};
+		0CF4B7C3209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C9174901BAE99EE004A7905;
+			remoteInfo = "Nuke iOS";
+		};
+		0CF4B7C5209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C22DA2C1BCAA220006E1D3B;
+			remoteInfo = "Nuke macOS";
+		};
+		0CF4B7C7209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C22D9C51BCA9734006E1D3B;
+			remoteInfo = "Nuke watchOS";
+		};
+		0CF4B7C9209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CC345971BD96CFE005C2DD8;
+			remoteInfo = "Nuke tvOS";
+		};
+		0CF4B7CB209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C7C06771BCA882A00089D7F;
+			remoteInfo = "Nuke iOS Tests";
+		};
+		0CF4B7CD209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C22DA381BCAA22A006E1D3B;
+			remoteInfo = "Nuke macOS Tests";
+		};
+		0CF4B7CF209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CC345A31BD96D2A005C2DD8;
+			remoteInfo = "Nuke tvOS Tests";
+		};
+		0CF4B7D1209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C8D7BD01D9DBF1600D12EB7;
+			remoteInfo = "Nuke iOS Tests Host";
+		};
+		0CF4B7D3209B333E00F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C8D7BE81D9DC02B00D12EB7;
+			remoteInfo = "Nuke iOS Performance Tests";
+		};
+		0CF4B7DF209B335100F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C06D2241C11F3FF00CC5C35;
+			remoteInfo = "Nuke iOS FLAnimatedImage Plugin";
+		};
+		0CF4B7E3209B336900F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C91748F1BAE99EE004A7905;
+			remoteInfo = "Nuke iOS";
+		};
+		0CF4B7E7209B336900F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 92C9BC0B1B199DC500D79B06;
+			remoteInfo = FLAnimatedImage;
+		};
+		0CF4B7EB209B336900F4A04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C06D2231C11F3FF00CC5C35;
+			remoteInfo = "Nuke iOS FLAnimatedImage Plugin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0CF4B7ED209B336900F4A04B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0CF4B7E2209B336900F4A04B /* Nuke.framework in Embed Frameworks */,
+				0CF4B7EA209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Embed Frameworks */,
+				0CF4B7E6209B336900F4A04B /* FLAnimatedImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C232ABC1D9196F5004CAFC8 /* Nuke-FLAnimatedImage-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nuke-FLAnimatedImage-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,16 +145,9 @@
 		0C232AC51D9196F5004CAFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C232AC81D9196F5004CAFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C232ACA1D9196F5004CAFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AFD25F7E063686B549722E9 /* Pods_Nuke_FLAnimatedImage_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nuke_FLAnimatedImage_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F9382A8DD1F371E4165DA59 /* Pods-Nuke Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nuke Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nuke Demo/Pods-Nuke Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		86980F4BF37BE7E58BD3F7CF /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE2CFE43209DF48E045EA7BB /* Pods-Nuke-FLAnimatedImage-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nuke-FLAnimatedImage-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nuke-FLAnimatedImage-Demo/Pods-Nuke-FLAnimatedImage-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		BF9DAB879AC07FF7D438B4C2 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		CA4F98B22D21BCC69907752C /* Pods-Nuke Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nuke Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nuke Demo/Pods-Nuke Demo.release.xcconfig"; sourceTree = "<group>"; };
-		CFE006FA9747B0D7595611DB /* Pods-Nuke-FLAnimatedImage-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nuke-FLAnimatedImage-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nuke-FLAnimatedImage-Demo/Pods-Nuke-FLAnimatedImage-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		D1C764F283FAFD6FF8599B6A /* Pods_Nuke_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nuke_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D41C16807F95F83FB63DA311 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D724F3D2F4988C64F2AE1624 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLAnimatedImage.xcodeproj; path = ../../Carthage/Checkouts/FLAnimatedImage/FLAnimatedImage.xcodeproj; sourceTree = "<group>"; };
+		0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nuke.xcodeproj; path = ../../Carthage/Checkouts/Nuke/Nuke.xcodeproj; sourceTree = "<group>"; };
+		0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Nuke-FLAnimatedImage-Plugin.xcodeproj"; path = "../../Nuke-FLAnimatedImage-Plugin.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +155,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F50A7C49F25F834028A6AE21 /* Pods_Nuke_FLAnimatedImage_Demo.framework in Frameworks */,
+				0CF4B7E1209B336900F4A04B /* Nuke.framework in Frameworks */,
+				0CF4B7E9209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Frameworks */,
+				0CF4B7E5209B336900F4A04B /* FLAnimatedImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,26 +177,55 @@
 			path = Source;
 			sourceTree = SOURCE_ROOT;
 		};
-		2A780CB0152F4705F2EC5D09 /* Pods */ = {
+		0CF4B7B0209B332200F4A04B /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				6F9382A8DD1F371E4165DA59 /* Pods-Nuke Demo.debug.xcconfig */,
-				CA4F98B22D21BCC69907752C /* Pods-Nuke Demo.release.xcconfig */,
-				BF9DAB879AC07FF7D438B4C2 /* Pods-Demo.debug.xcconfig */,
-				D724F3D2F4988C64F2AE1624 /* Pods-Demo.release.xcconfig */,
-				BE2CFE43209DF48E045EA7BB /* Pods-Nuke-FLAnimatedImage-Demo.debug.xcconfig */,
-				CFE006FA9747B0D7595611DB /* Pods-Nuke-FLAnimatedImage-Demo.release.xcconfig */,
+				0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */,
+				0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */,
+				0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */,
 			);
-			name = Pods;
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		0CF4B7B2209B333800F4A04B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CF4B7B8209B333E00F4A04B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4B7C4209B333E00F4A04B /* Nuke.framework */,
+				0CF4B7C6209B333E00F4A04B /* Nuke.framework */,
+				0CF4B7C8209B333E00F4A04B /* Nuke.framework */,
+				0CF4B7CA209B333E00F4A04B /* Nuke.framework */,
+				0CF4B7CC209B333E00F4A04B /* Nuke iOS Tests.xctest */,
+				0CF4B7CE209B333E00F4A04B /* Nuke macOS Tests.xctest */,
+				0CF4B7D0209B333E00F4A04B /* Nuke tvOS Tests.xctest */,
+				0CF4B7D2209B333E00F4A04B /* Nuke iOS Tests Host.app */,
+				0CF4B7D4209B333E00F4A04B /* Nuke iOS Performance Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CF4B7DC209B335100F4A04B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				0CF4B7B0209B332200F4A04B /* Dependencies */,
 				0C232ABD1D9196F5004CAFC8 /* Source */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B268730C38EF50AF5D1A33EC /* Frameworks */,
-				2A780CB0152F4705F2EC5D09 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +240,6 @@
 		B268730C38EF50AF5D1A33EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D41C16807F95F83FB63DA311 /* Pods.framework */,
-				D1C764F283FAFD6FF8599B6A /* Pods_Nuke_Demo.framework */,
-				86980F4BF37BE7E58BD3F7CF /* Pods_Demo.framework */,
-				6AFD25F7E063686B549722E9 /* Pods_Nuke_FLAnimatedImage_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,16 +251,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C232ACB1D9196F5004CAFC8 /* Build configuration list for PBXNativeTarget "Nuke-FLAnimatedImage-Demo" */;
 			buildPhases = (
-				D327251DB79836F6BFC5904B /* [CP] Check Pods Manifest.lock */,
 				0C232AB81D9196F5004CAFC8 /* Sources */,
 				0C232AB91D9196F5004CAFC8 /* Frameworks */,
 				0C232ABA1D9196F5004CAFC8 /* Resources */,
-				EE68C12134618C8FFFAE424F /* [CP] Embed Pods Frameworks */,
-				A2CEA8637BAEB7979F49F937 /* [CP] Copy Pods Resources */,
+				0CF4B7ED209B336900F4A04B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0CF4B7E4209B336900F4A04B /* PBXTargetDependency */,
+				0CF4B7E8209B336900F4A04B /* PBXTargetDependency */,
+				0CF4B7EC209B336900F4A04B /* PBXTargetDependency */,
 			);
 			name = "Nuke-FLAnimatedImage-Demo";
 			productName = "Nuke-FLAnimatedImage-Demo";
@@ -153,12 +296,106 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0CF4B7B2209B333800F4A04B /* Products */;
+					ProjectRef = 0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 0CF4B7DC209B335100F4A04B /* Products */;
+					ProjectRef = 0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
+				},
+				{
+					ProductGroup = 0CF4B7B8209B333E00F4A04B /* Products */;
+					ProjectRef = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0C232ABB1D9196F5004CAFC8 /* Nuke-FLAnimatedImage-Demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FLAnimatedImage.framework;
+			remoteRef = 0CF4B7B5209B333900F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7C4209B333E00F4A04B /* Nuke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nuke.framework;
+			remoteRef = 0CF4B7C3209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7C6209B333E00F4A04B /* Nuke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nuke.framework;
+			remoteRef = 0CF4B7C5209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7C8209B333E00F4A04B /* Nuke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nuke.framework;
+			remoteRef = 0CF4B7C7209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7CA209B333E00F4A04B /* Nuke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nuke.framework;
+			remoteRef = 0CF4B7C9209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7CC209B333E00F4A04B /* Nuke iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Nuke iOS Tests.xctest";
+			remoteRef = 0CF4B7CB209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7CE209B333E00F4A04B /* Nuke macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Nuke macOS Tests.xctest";
+			remoteRef = 0CF4B7CD209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7D0209B333E00F4A04B /* Nuke tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Nuke tvOS Tests.xctest";
+			remoteRef = 0CF4B7CF209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7D2209B333E00F4A04B /* Nuke iOS Tests Host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Nuke iOS Tests Host.app";
+			remoteRef = 0CF4B7D1209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7D4209B333E00F4A04B /* Nuke iOS Performance Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Nuke iOS Performance Tests.xctest";
+			remoteRef = 0CF4B7D3209B333E00F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NukeFLAnimatedImagePlugin.framework;
+			remoteRef = 0CF4B7DF209B335100F4A04B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0C232ABA1D9196F5004CAFC8 /* Resources */ = {
@@ -173,64 +410,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A2CEA8637BAEB7979F49F937 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nuke-FLAnimatedImage-Demo/Pods-Nuke-FLAnimatedImage-Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D327251DB79836F6BFC5904B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Nuke-FLAnimatedImage-Demo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE68C12134618C8FFFAE424F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nuke-FLAnimatedImage-Demo/Pods-Nuke-FLAnimatedImage-Demo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
-				"${BUILT_PRODUCTS_DIR}/Nuke-FLAnimatedImage-Plugin/NukeFLAnimatedImagePlugin.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NukeFLAnimatedImagePlugin.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nuke-FLAnimatedImage-Demo/Pods-Nuke-FLAnimatedImage-Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0C232AB81D9196F5004CAFC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,6 +421,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CF4B7E4209B336900F4A04B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nuke iOS";
+			targetProxy = 0CF4B7E3209B336900F4A04B /* PBXContainerItemProxy */;
+		};
+		0CF4B7E8209B336900F4A04B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			targetProxy = 0CF4B7E7209B336900F4A04B /* PBXContainerItemProxy */;
+		};
+		0CF4B7EC209B336900F4A04B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nuke iOS FLAnimatedImage Plugin";
+			targetProxy = 0CF4B7EB209B336900F4A04B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C232AC21D9196F5004CAFC8 /* Main.storyboard */ = {
@@ -265,8 +462,8 @@
 /* Begin XCBuildConfiguration section */
 		0C232ACC1D9196F5004CAFC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2CFE43209DF48E045EA7BB /* Pods-Nuke-FLAnimatedImage-Demo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -286,8 +483,8 @@
 		};
 		0C232ACD1D9196F5004CAFC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFE006FA9747B0D7595611DB /* Pods-Nuke-FLAnimatedImage-Demo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
