@@ -7,117 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C045A70209C1D540034FC3E /* NukeFLAnimatedImagePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C045A6F209C1D4E0034FC3E /* NukeFLAnimatedImagePlugin.framework */; };
+		0C045A71209C1D540034FC3E /* NukeFLAnimatedImagePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C045A6F209C1D4E0034FC3E /* NukeFLAnimatedImagePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C045A74209C1D540034FC3E /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C045A59209C1D4A0034FC3E /* Nuke.framework */; };
+		0C045A75209C1D540034FC3E /* Nuke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C045A59209C1D4A0034FC3E /* Nuke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C045A78209C1D540034FC3E /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C045A4B209C1D430034FC3E /* FLAnimatedImage.framework */; };
+		0C045A79209C1D540034FC3E /* FLAnimatedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C045A4B209C1D430034FC3E /* FLAnimatedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C232ABF1D9196F5004CAFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C232ABE1D9196F5004CAFC8 /* AppDelegate.swift */; };
 		0C232AC11D9196F5004CAFC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C232AC01D9196F5004CAFC8 /* ViewController.swift */; };
 		0C232AC41D9196F5004CAFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C232AC21D9196F5004CAFC8 /* Main.storyboard */; };
 		0C232AC61D9196F5004CAFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C232AC51D9196F5004CAFC8 /* Assets.xcassets */; };
 		0C232AC91D9196F5004CAFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C232AC71D9196F5004CAFC8 /* LaunchScreen.storyboard */; };
-		0CF4B7E1209B336900F4A04B /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7C4209B333E00F4A04B /* Nuke.framework */; };
-		0CF4B7E2209B336900F4A04B /* Nuke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7C4209B333E00F4A04B /* Nuke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0CF4B7E5209B336900F4A04B /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */; };
-		0CF4B7E6209B336900F4A04B /* FLAnimatedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0CF4B7E9209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */; };
-		0CF4B7EA209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0CF4B7B5209B333900F4A04B /* PBXContainerItemProxy */ = {
+		0C045A4A209C1D430034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */;
+			containerPortal = 0C045A46209C1D430034FC3E /* FLAnimatedImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 92C9BC0C1B199DC500D79B06;
 			remoteInfo = FLAnimatedImage;
 		};
-		0CF4B7C3209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A58209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C9174901BAE99EE004A7905;
 			remoteInfo = "Nuke iOS";
 		};
-		0CF4B7C5209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A5A209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C22DA2C1BCAA220006E1D3B;
 			remoteInfo = "Nuke macOS";
 		};
-		0CF4B7C7209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A5C209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C22D9C51BCA9734006E1D3B;
 			remoteInfo = "Nuke watchOS";
 		};
-		0CF4B7C9209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A5E209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0CC345971BD96CFE005C2DD8;
 			remoteInfo = "Nuke tvOS";
 		};
-		0CF4B7CB209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A60209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C7C06771BCA882A00089D7F;
 			remoteInfo = "Nuke iOS Tests";
 		};
-		0CF4B7CD209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A62209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C22DA381BCAA22A006E1D3B;
 			remoteInfo = "Nuke macOS Tests";
 		};
-		0CF4B7CF209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A64209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0CC345A31BD96D2A005C2DD8;
 			remoteInfo = "Nuke tvOS Tests";
 		};
-		0CF4B7D1209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A66209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C8D7BD01D9DBF1600D12EB7;
 			remoteInfo = "Nuke iOS Tests Host";
 		};
-		0CF4B7D3209B333E00F4A04B /* PBXContainerItemProxy */ = {
+		0C045A68209C1D4A0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C8D7BE81D9DC02B00D12EB7;
 			remoteInfo = "Nuke iOS Performance Tests";
 		};
-		0CF4B7DF209B335100F4A04B /* PBXContainerItemProxy */ = {
+		0C045A6E209C1D4E0034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
+			containerPortal = 0C045A6A209C1D4E0034FC3E /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0C06D2241C11F3FF00CC5C35;
 			remoteInfo = "Nuke iOS FLAnimatedImage Plugin";
 		};
-		0CF4B7E3209B336900F4A04B /* PBXContainerItemProxy */ = {
+		0C045A72209C1D540034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+			containerPortal = 0C045A6A209C1D4E0034FC3E /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C06D2231C11F3FF00CC5C35;
+			remoteInfo = "Nuke iOS FLAnimatedImage Plugin";
+		};
+		0C045A76209C1D540034FC3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C91748F1BAE99EE004A7905;
 			remoteInfo = "Nuke iOS";
 		};
-		0CF4B7E7209B336900F4A04B /* PBXContainerItemProxy */ = {
+		0C045A7A209C1D540034FC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */;
+			containerPortal = 0C045A46209C1D430034FC3E /* FLAnimatedImage.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 92C9BC0B1B199DC500D79B06;
 			remoteInfo = FLAnimatedImage;
-		};
-		0CF4B7EB209B336900F4A04B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C06D2231C11F3FF00CC5C35;
-			remoteInfo = "Nuke iOS FLAnimatedImage Plugin";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -128,9 +128,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0CF4B7E2209B336900F4A04B /* Nuke.framework in Embed Frameworks */,
-				0CF4B7EA209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Embed Frameworks */,
-				0CF4B7E6209B336900F4A04B /* FLAnimatedImage.framework in Embed Frameworks */,
+				0C045A71209C1D540034FC3E /* NukeFLAnimatedImagePlugin.framework in Embed Frameworks */,
+				0C045A79209C1D540034FC3E /* FLAnimatedImage.framework in Embed Frameworks */,
+				0C045A75209C1D540034FC3E /* Nuke.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +138,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C045A46209C1D430034FC3E /* FLAnimatedImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLAnimatedImage.xcodeproj; path = ../Carthage/Checkouts/FLAnimatedImage/FLAnimatedImage.xcodeproj; sourceTree = "<group>"; };
+		0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nuke.xcodeproj; path = ../Carthage/Checkouts/Nuke/Nuke.xcodeproj; sourceTree = "<group>"; };
+		0C045A6A209C1D4E0034FC3E /* Nuke-FLAnimatedImage-Plugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Nuke-FLAnimatedImage-Plugin.xcodeproj"; path = "../Nuke-FLAnimatedImage-Plugin.xcodeproj"; sourceTree = "<group>"; };
 		0C232ABC1D9196F5004CAFC8 /* Nuke-FLAnimatedImage-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nuke-FLAnimatedImage-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C232ABE1D9196F5004CAFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C232AC01D9196F5004CAFC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,9 +148,6 @@
 		0C232AC51D9196F5004CAFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C232AC81D9196F5004CAFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C232ACA1D9196F5004CAFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLAnimatedImage.xcodeproj; path = ../../Carthage/Checkouts/FLAnimatedImage/FLAnimatedImage.xcodeproj; sourceTree = "<group>"; };
-		0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nuke.xcodeproj; path = ../../Carthage/Checkouts/Nuke/Nuke.xcodeproj; sourceTree = "<group>"; };
-		0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Nuke-FLAnimatedImage-Plugin.xcodeproj"; path = "../../Nuke-FLAnimatedImage-Plugin.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,15 +155,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CF4B7E1209B336900F4A04B /* Nuke.framework in Frameworks */,
-				0CF4B7E9209B336900F4A04B /* NukeFLAnimatedImagePlugin.framework in Frameworks */,
-				0CF4B7E5209B336900F4A04B /* FLAnimatedImage.framework in Frameworks */,
+				0C045A70209C1D540034FC3E /* NukeFLAnimatedImagePlugin.framework in Frameworks */,
+				0C045A78209C1D540034FC3E /* FLAnimatedImage.framework in Frameworks */,
+				0C045A74209C1D540034FC3E /* Nuke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C045A45209C1D380034FC3E /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				0C045A6A209C1D4E0034FC3E /* Nuke-FLAnimatedImage-Plugin.xcodeproj */,
+				0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */,
+				0C045A46209C1D430034FC3E /* FLAnimatedImage.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		0C045A47209C1D430034FC3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C045A4B209C1D430034FC3E /* FLAnimatedImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C045A4D209C1D4A0034FC3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C045A59209C1D4A0034FC3E /* Nuke.framework */,
+				0C045A5B209C1D4A0034FC3E /* Nuke.framework */,
+				0C045A5D209C1D4A0034FC3E /* Nuke.framework */,
+				0C045A5F209C1D4A0034FC3E /* Nuke.framework */,
+				0C045A61209C1D4A0034FC3E /* Nuke iOS Tests.xctest */,
+				0C045A63209C1D4A0034FC3E /* Nuke macOS Tests.xctest */,
+				0C045A65209C1D4A0034FC3E /* Nuke tvOS Tests.xctest */,
+				0C045A67209C1D4A0034FC3E /* Nuke iOS Tests Host.app */,
+				0C045A69209C1D4A0034FC3E /* Nuke iOS Performance Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C045A6B209C1D4E0034FC3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C045A6F209C1D4E0034FC3E /* NukeFLAnimatedImagePlugin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0C232ABD1D9196F5004CAFC8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,52 +219,10 @@
 			path = Source;
 			sourceTree = SOURCE_ROOT;
 		};
-		0CF4B7B0209B332200F4A04B /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */,
-				0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */,
-				0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		0CF4B7B2209B333800F4A04B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0CF4B7B8209B333E00F4A04B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0CF4B7C4209B333E00F4A04B /* Nuke.framework */,
-				0CF4B7C6209B333E00F4A04B /* Nuke.framework */,
-				0CF4B7C8209B333E00F4A04B /* Nuke.framework */,
-				0CF4B7CA209B333E00F4A04B /* Nuke.framework */,
-				0CF4B7CC209B333E00F4A04B /* Nuke iOS Tests.xctest */,
-				0CF4B7CE209B333E00F4A04B /* Nuke macOS Tests.xctest */,
-				0CF4B7D0209B333E00F4A04B /* Nuke tvOS Tests.xctest */,
-				0CF4B7D2209B333E00F4A04B /* Nuke iOS Tests Host.app */,
-				0CF4B7D4209B333E00F4A04B /* Nuke iOS Performance Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0CF4B7DC209B335100F4A04B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				0CF4B7B0209B332200F4A04B /* Dependencies */,
+				0C045A45209C1D380034FC3E /* Dependencies */,
 				0C232ABD1D9196F5004CAFC8 /* Source */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B268730C38EF50AF5D1A33EC /* Frameworks */,
@@ -259,9 +259,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				0CF4B7E4209B336900F4A04B /* PBXTargetDependency */,
-				0CF4B7E8209B336900F4A04B /* PBXTargetDependency */,
-				0CF4B7EC209B336900F4A04B /* PBXTargetDependency */,
+				0C045A73209C1D540034FC3E /* PBXTargetDependency */,
+				0C045A77209C1D540034FC3E /* PBXTargetDependency */,
+				0C045A7B209C1D540034FC3E /* PBXTargetDependency */,
 			);
 			name = "Nuke-FLAnimatedImage-Demo";
 			productName = "Nuke-FLAnimatedImage-Demo";
@@ -298,16 +298,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0CF4B7B2209B333800F4A04B /* Products */;
-					ProjectRef = 0CF4B7B1209B333800F4A04B /* FLAnimatedImage.xcodeproj */;
+					ProductGroup = 0C045A47209C1D430034FC3E /* Products */;
+					ProjectRef = 0C045A46209C1D430034FC3E /* FLAnimatedImage.xcodeproj */;
 				},
 				{
-					ProductGroup = 0CF4B7DC209B335100F4A04B /* Products */;
-					ProjectRef = 0CF4B7DB209B335100F4A04B /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
+					ProductGroup = 0C045A6B209C1D4E0034FC3E /* Products */;
+					ProjectRef = 0C045A6A209C1D4E0034FC3E /* Nuke-FLAnimatedImage-Plugin.xcodeproj */;
 				},
 				{
-					ProductGroup = 0CF4B7B8209B333E00F4A04B /* Products */;
-					ProjectRef = 0CF4B7B7209B333E00F4A04B /* Nuke.xcodeproj */;
+					ProductGroup = 0C045A4D209C1D4A0034FC3E /* Products */;
+					ProjectRef = 0C045A4C209C1D4A0034FC3E /* Nuke.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -318,81 +318,81 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0CF4B7B6209B333900F4A04B /* FLAnimatedImage.framework */ = {
+		0C045A4B209C1D430034FC3E /* FLAnimatedImage.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FLAnimatedImage.framework;
-			remoteRef = 0CF4B7B5209B333900F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A4A209C1D430034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7C4209B333E00F4A04B /* Nuke.framework */ = {
+		0C045A59209C1D4A0034FC3E /* Nuke.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Nuke.framework;
-			remoteRef = 0CF4B7C3209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A58209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7C6209B333E00F4A04B /* Nuke.framework */ = {
+		0C045A5B209C1D4A0034FC3E /* Nuke.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Nuke.framework;
-			remoteRef = 0CF4B7C5209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A5A209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7C8209B333E00F4A04B /* Nuke.framework */ = {
+		0C045A5D209C1D4A0034FC3E /* Nuke.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Nuke.framework;
-			remoteRef = 0CF4B7C7209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A5C209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7CA209B333E00F4A04B /* Nuke.framework */ = {
+		0C045A5F209C1D4A0034FC3E /* Nuke.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Nuke.framework;
-			remoteRef = 0CF4B7C9209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A5E209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7CC209B333E00F4A04B /* Nuke iOS Tests.xctest */ = {
+		0C045A61209C1D4A0034FC3E /* Nuke iOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Nuke iOS Tests.xctest";
-			remoteRef = 0CF4B7CB209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A60209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7CE209B333E00F4A04B /* Nuke macOS Tests.xctest */ = {
+		0C045A63209C1D4A0034FC3E /* Nuke macOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Nuke macOS Tests.xctest";
-			remoteRef = 0CF4B7CD209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A62209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7D0209B333E00F4A04B /* Nuke tvOS Tests.xctest */ = {
+		0C045A65209C1D4A0034FC3E /* Nuke tvOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Nuke tvOS Tests.xctest";
-			remoteRef = 0CF4B7CF209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A64209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7D2209B333E00F4A04B /* Nuke iOS Tests Host.app */ = {
+		0C045A67209C1D4A0034FC3E /* Nuke iOS Tests Host.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Nuke iOS Tests Host.app";
-			remoteRef = 0CF4B7D1209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A66209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7D4209B333E00F4A04B /* Nuke iOS Performance Tests.xctest */ = {
+		0C045A69209C1D4A0034FC3E /* Nuke iOS Performance Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Nuke iOS Performance Tests.xctest";
-			remoteRef = 0CF4B7D3209B333E00F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A68209C1D4A0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0CF4B7E0209B335100F4A04B /* NukeFLAnimatedImagePlugin.framework */ = {
+		0C045A6F209C1D4E0034FC3E /* NukeFLAnimatedImagePlugin.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NukeFLAnimatedImagePlugin.framework;
-			remoteRef = 0CF4B7DF209B335100F4A04B /* PBXContainerItemProxy */;
+			remoteRef = 0C045A6E209C1D4E0034FC3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -423,20 +423,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0CF4B7E4209B336900F4A04B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Nuke iOS";
-			targetProxy = 0CF4B7E3209B336900F4A04B /* PBXContainerItemProxy */;
-		};
-		0CF4B7E8209B336900F4A04B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLAnimatedImage;
-			targetProxy = 0CF4B7E7209B336900F4A04B /* PBXContainerItemProxy */;
-		};
-		0CF4B7EC209B336900F4A04B /* PBXTargetDependency */ = {
+		0C045A73209C1D540034FC3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Nuke iOS FLAnimatedImage Plugin";
-			targetProxy = 0CF4B7EB209B336900F4A04B /* PBXContainerItemProxy */;
+			targetProxy = 0C045A72209C1D540034FC3E /* PBXContainerItemProxy */;
+		};
+		0C045A77209C1D540034FC3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nuke iOS";
+			targetProxy = 0C045A76209C1D540034FC3E /* PBXContainerItemProxy */;
+		};
+		0C045A7B209C1D540034FC3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			targetProxy = 0C045A7A209C1D540034FC3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -7,18 +7,22 @@
 
 [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage) plugin for [Nuke](https://github.com/kean/Nuke) that allows you to load and display animated GIFs with [smooth scrolling performance](https://www.youtube.com/watch?v=fEJqQMJrET4) and low memory footprint. You can see it for yourself in a demo, included in the project.
 
-
 ## Usage
 
-The plugin features a pre-configured `Nuke.Manager` with GIF support, and an `AnimatedImageView`:
+All you need to do to enable GIF support is set `isAnimatedImageDataEnabled` to `true`. After you do that, you can start using `FLAnimatedImageView`.
 
 ```swift
-let view = AnimatedImageView()
-view.prepareForReuse()
-Nuke.Manager.animatedImageManager.loadImage(with: URL(string: "http://...")!, into: view)
+ImagePipeline.Configuration.isAnimatedImageDataEnabled = true
+
+let view = FLAnimatedImageView()
+Nuke.loadImage(with: URL(string: "http://.../cat.gif")!, into: view)
 ```
 
 ## Installation
+
+### Manually
+
+The entire plugin is a single file with 23 lines of code which you can just copy into your project without having to deal with extra framework dependencies.
 
 ### [CocoaPods](http://cocoapods.org)
 
@@ -42,12 +46,12 @@ github "kean/Nuke-FLAnimatedImage-Plugin"
 ## Requirements
 
 - iOS 9
-- Xcode 9
-- Swift 4
+- Xcode 9.3
+- Swift 4.1
 
 ## Dependencies
 
-- [Nuke 6](https://github.com/kean/Nuke)
+- [Nuke 7.0-rc1](https://github.com/kean/Nuke)
 - [FLAnimatedImage 1](https://github.com/Flipboard/FLAnimatedImage)
 
 ## License
