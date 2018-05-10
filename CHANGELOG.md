@@ -1,3 +1,7 @@
+# Nuke FLAnimatedImage Plugin 5.0
+
+Updated for Nuke 7
+
 # Nuke FLAnimatedImage Plugin 4.0
 
 A primary focus of this release is to update the project to Swift 4.1.  **Requires a few small migrations steps**. See the list of changes for more info:

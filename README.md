@@ -43,15 +43,15 @@ To install the plugin add a dependency to your Cartfile:
 github "kean/Nuke-FLAnimatedImage-Plugin"
 ```
 
-## Requirements
+## Minimum Requirements
 
 - iOS 9
-- Xcode 9.3
-- Swift 4.1
+- Xcode 9.2
+- Swift 4.0
 
 ## Dependencies
 
-- [Nuke 7.0-rc1](https://github.com/kean/Nuke)
+- [Nuke 7.0](https://github.com/kean/Nuke)
 - [FLAnimatedImage 1](https://github.com/Flipboard/FLAnimatedImage)
 
 ## License
