@@ -51,7 +51,7 @@ github "kean/Nuke-FLAnimatedImage-Plugin"
 
 ## Dependencies
 
-- [Nuke 7.0](https://github.com/kean/Nuke)
+- [Nuke 7.5](https://github.com/kean/Nuke)
 - [FLAnimatedImage 1](https://github.com/Flipboard/FLAnimatedImage)
 
 ## License
