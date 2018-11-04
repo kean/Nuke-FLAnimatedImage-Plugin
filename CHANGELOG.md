@@ -1,3 +1,9 @@
+# Nuke FLAnimatedImage Plugin 6.0
+
+- Update to Swift 4.2
+- Update to Nuke 7.5
+- Remove Deprecated.swift
+
 # Nuke FLAnimatedImage Plugin 5.0
 
 Updated for Nuke 7
