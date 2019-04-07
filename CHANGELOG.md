@@ -1,3 +1,9 @@
+# Nuke FLAnimatedImage Plugin 6.1
+
+- Add Swift 5 support
+- Remove Swift 4.0 and Swift 4.1 support
+- Remove iOS 9.0 support
+
 # Nuke FLAnimatedImage Plugin 6.0
 
 - Update to Swift 4.2
