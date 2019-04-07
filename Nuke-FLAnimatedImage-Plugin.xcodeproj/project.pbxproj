@@ -19,6 +19,10 @@
 		0C06D2371C11F62300CC5C35 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
 		0C06D2381C11F62300CC5C35 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		0C2EE5C5225A8BAA00743F47 /* NukeFLAnimatedImafgePlugin.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = NukeFLAnimatedImafgePlugin.xcconfig; sourceTree = "<group>"; };
+		0C4E3BFA225A8D7E00E32EE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0C4E3BFB225A8D8500E32EE1 /* Nuke-FLAnimatedImage-Plugin.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Nuke-FLAnimatedImage-Plugin.podspec"; sourceTree = "<group>"; };
+		0C4E3BFC225A8D8C00E32EE1 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0C4E3BFD225A8D9200E32EE1 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 		0C06D21A1C11F3FF00CC5C35 = {
 			isa = PBXGroup;
 			children = (
+				0C4E3BF9225A8D7300E32EE1 /* Metadata */,
 				0C06D22F1C11F47D00CC5C35 /* Source */,
 				0C06D23B1C11F62700CC5C35 /* Frameworks */,
 				0C06D2251C11F3FF00CC5C35 /* Products */,
@@ -76,6 +81,17 @@
 				0C06D2381C11F62300CC5C35 /* Nuke.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C4E3BF9225A8D7300E32EE1 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				0C4E3BFA225A8D7E00E32EE1 /* README.md */,
+				0C4E3BFB225A8D8500E32EE1 /* Nuke-FLAnimatedImage-Plugin.podspec */,
+				0C4E3BFC225A8D8C00E32EE1 /* CHANGELOG.md */,
+				0C4E3BFD225A8D9200E32EE1 /* Cartfile */,
+			);
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
