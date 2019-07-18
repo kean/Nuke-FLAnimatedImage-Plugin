@@ -1,3 +1,7 @@
+# Nuke FLAnimatedImage Plugin 6.2
+
+- Update to Nuke 8
+
 # Nuke FLAnimatedImage Plugin 6.1
 
 - Add Swift 5 support
