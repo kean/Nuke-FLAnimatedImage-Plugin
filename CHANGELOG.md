@@ -1,3 +1,7 @@
+# Nuke FLAnimatedImage Plugin 7.0
+
+- Update to Nuke 9
+
 # Nuke FLAnimatedImage Plugin 6.2
 
 - Update to Nuke 8
