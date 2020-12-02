@@ -7,7 +7,7 @@ import FLAnimatedImage
 import Nuke
 
 extension FLAnimatedImageView {
-    @objc open override func nuke_display(image: Image?) {
+    @objc open override func nuke_display(image: PlatformImage?) {
         guard image != nil else {
             self.animatedImage = nil
             self.image = nil
