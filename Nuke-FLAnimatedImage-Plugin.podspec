@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Nuke-FLAnimatedImage-Plugin'
-    s.version          = '7.0.0'
+    s.version          = '7.1.0'
     s.summary          = 'Animated image plugin for Nuke - image loading and caching framework'
 
     s.homepage         = 'https://github.com/kean/Nuke-AnimatedImage-Plugin'
