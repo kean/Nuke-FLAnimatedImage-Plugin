@@ -1,19 +1,19 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2016-2020 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2016-2021 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
 import FLAnimatedImage
 import Nuke
 
 extension FLAnimatedImageView {
-    @objc open override func nuke_display(image: PlatformImage?) {
+    open override func nuke_display(image: UIImage?, data: Data?) {
         guard image != nil else {
             self.animatedImage = nil
             self.image = nil
             return
         }
-        if let data = image?.animatedImageData {
+        if let data = data {
             // Display poster image immediately
             self.image = image
 
