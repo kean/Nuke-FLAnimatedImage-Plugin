@@ -32,3 +32,6 @@ Pods/
 
 Carthage/Checkouts
 Carthage/Build
+
+.swiftpm
+.build
